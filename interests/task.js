@@ -15,6 +15,7 @@ function checkDown (element) {
     let checkboxes = element.closest(".interest").querySelectorAll(".interest__check");
     for (let checkbox of checkboxes) {
         checkbox.checked = element.checked;
+        checkbox.indeterminate = false;
     };
 };
 
